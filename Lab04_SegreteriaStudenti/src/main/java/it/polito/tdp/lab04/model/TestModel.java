@@ -9,6 +9,16 @@ public class TestModel {
 		/*
 		 * 	Write here your test model
 		 */
+		
+		for(Corso c: model.getTuttiICorsi()) {
+			System.out.println(c);
+		}
+		
+		System.out.println(model.getStudente(146101));
+		
+		if(model.verificaIscrizione(146101, "02CIXPG") == true) {
+			System.out.println("trueeeeeeeeeeeeeeee");
+		}
 
 	}
 
